@@ -3,6 +3,8 @@
 #   brew install video-mosaic
 
 class VideoMosaic < Formula
+  include Language::Python::Virtualenv
+
   desc "Extract video frames and compose them into a mosaic image"
   homepage "https://github.com/GonzaloFuentes28/video-mosaic"
   url "https://github.com/GonzaloFuentes28/video-mosaic/archive/refs/tags/v0.1.0.tar.gz"
