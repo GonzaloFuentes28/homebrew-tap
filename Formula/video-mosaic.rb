@@ -7,8 +7,8 @@ class VideoMosaic < Formula
 
   desc "Extract video frames and compose them into a mosaic image"
   homepage "https://github.com/GonzaloFuentes28/video-mosaic"
-  url "https://github.com/GonzaloFuentes28/video-mosaic/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "df16333a1f63084cb9b3f86ca37a82a5682bc8806d8a754351746a261ae64385"
+  url "https://github.com/GonzaloFuentes28/video-mosaic/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "3faf1111b2ebe09b1f3f06aa351679ad22ef9dcc6cb9a2fcda758632c0051dd8"
   license "MIT"
 
   depends_on "ffmpeg"
