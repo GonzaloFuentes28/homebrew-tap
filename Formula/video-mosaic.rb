@@ -13,7 +13,7 @@ class VideoMosaic < Formula
 
   depends_on "ffmpeg"
   depends_on "pillow"
-  depends_on "python@3.12"
+  depends_on "python@3.13"
 
   resource "rich" do
     url "https://files.pythonhosted.org/packages/source/r/rich/rich-14.3.3.tar.gz"
