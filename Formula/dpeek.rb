@@ -11,7 +11,7 @@ class Dpeek < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/GonzaloFuentes28/dpeek/releases/download/v0.2.0/dpeek_darwin_amd64.tar.gz"
-      sha256 "638e84298c88bd135125c2b7bc60590ff03a372ec4b22a5f34507eb8c5dbd64b"
+      sha256 "332a326b9b08af93e19b12c5231623b831cd4df4d34ceeff182de2e31c273817"
 
       define_method(:install) do
         bin.install "dpeek"
@@ -20,7 +20,7 @@ class Dpeek < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/GonzaloFuentes28/dpeek/releases/download/v0.2.0/dpeek_darwin_arm64.tar.gz"
-      sha256 "cffd30a0fbba6bd86bf67cd324f3447e34fd0cefb7cb33c45109acd22917c687"
+      sha256 "321ee3587d4bf619f41abf3d62317c2b4bbd9d903b4708d98ed3cce0788436df"
 
       define_method(:install) do
         bin.install "dpeek"
@@ -32,7 +32,7 @@ class Dpeek < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/GonzaloFuentes28/dpeek/releases/download/v0.2.0/dpeek_linux_amd64.tar.gz"
-      sha256 "6d6c0347110f8ba4ea053e59b63bc6c6b5ffbb8fccf3fb48cdc7081ac9e9289a"
+      sha256 "d51ce12b1e15a730ad717b4b169f2c62853e0d138efb194c536116d8873de2de"
       define_method(:install) do
         bin.install "dpeek"
         man1.install "dpeek.1"
@@ -40,7 +40,7 @@ class Dpeek < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/GonzaloFuentes28/dpeek/releases/download/v0.2.0/dpeek_linux_arm64.tar.gz"
-      sha256 "1b830b5108f3fbc486f2ce30fffa485fc0023f6b652ccf6cd368985bbe863e1a"
+      sha256 "f9c8e667d23ee85a6f9bf1dee20a5632975eea81cde58444bb2b67f03602bfcf"
       define_method(:install) do
         bin.install "dpeek"
         man1.install "dpeek.1"
