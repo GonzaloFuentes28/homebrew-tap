@@ -5,13 +5,13 @@
 class Dpeek < Formula
   desc "Interactive terminal data viewer for CSV, TSV, JSON, and JSONL files"
   homepage "https://github.com/GonzaloFuentes28/dpeek"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/GonzaloFuentes28/dpeek/releases/download/v0.4.0/dpeek_darwin_amd64.tar.gz"
-      sha256 "6d53434b131b18b1a542dfac102571c475eed5087648c25aa3115d42ef9c4bab"
+      url "https://github.com/GonzaloFuentes28/dpeek/releases/download/v0.4.1/dpeek_darwin_amd64.tar.gz"
+      sha256 "75adcd29f36d74b3e6f482fbffa699e846e955fa9251d58f70aa61fb27d44ad5"
 
       define_method(:install) do
         bin.install "dpeek"
@@ -19,8 +19,8 @@ class Dpeek < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/GonzaloFuentes28/dpeek/releases/download/v0.4.0/dpeek_darwin_arm64.tar.gz"
-      sha256 "c62de2cefe79edc0599c058241f3cd368be6ff78f584b0247c3e0fb95336ce36"
+      url "https://github.com/GonzaloFuentes28/dpeek/releases/download/v0.4.1/dpeek_darwin_arm64.tar.gz"
+      sha256 "565fe10f5f9342db5f24ad36f32b18a087162d5529179cb265232cdc16bc4857"
 
       define_method(:install) do
         bin.install "dpeek"
@@ -31,16 +31,16 @@ class Dpeek < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/GonzaloFuentes28/dpeek/releases/download/v0.4.0/dpeek_linux_amd64.tar.gz"
-      sha256 "1189fca1aa8c6867c40c61cfb2b62681603f3ceb3b40a90588767aa17d222846"
+      url "https://github.com/GonzaloFuentes28/dpeek/releases/download/v0.4.1/dpeek_linux_amd64.tar.gz"
+      sha256 "b3306b9139c274e392b5c811eb32a49a9962415556c137840599f74c56fa1624"
       define_method(:install) do
         bin.install "dpeek"
         man1.install "dpeek.1"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/GonzaloFuentes28/dpeek/releases/download/v0.4.0/dpeek_linux_arm64.tar.gz"
-      sha256 "da22c0112bb4d6b85c4d2098b3324d61df0033baf3022b8c4d0421f2151dd8f6"
+      url "https://github.com/GonzaloFuentes28/dpeek/releases/download/v0.4.1/dpeek_linux_arm64.tar.gz"
+      sha256 "a07316d9e8ffdad2c73dc91fb107bc1c641cef34a5503034ce32407b61325e8f"
       define_method(:install) do
         bin.install "dpeek"
         man1.install "dpeek.1"
